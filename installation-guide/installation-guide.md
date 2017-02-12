@@ -43,8 +43,8 @@ Sau khi thiết lập cấu hình mạng, ta tiến hành tạo máy ảo contro
 
 ![hardware-setting-vmware.png](./img/hardware-setting-vmware.png) 
 
-##2.2 Chuẩn bị môi trường cho controller node
-###2.2.1 Thiết lập địa chỉ mạng
+## Chuẩn bị môi trường cho controller node
+###Thiết lập địa chỉ mạng
 Ta kiểm tra và chỉnh sửa sao cho eth0 nằm ở mạng Vmnet2(internal) và eth1 nằm ở mạng Vmnet8(external):
 ![hardware-setting-vmware.png](./img/setting-network-controller.png) 
 
@@ -92,7 +92,7 @@ Chỉnh sửa file  /etc/hosts để phân giải IP cho các node:
 	
 Khởi động lại máy tính.
 
-###2.2.2 Cài đặt dịch vụ MySQL, message queue, Network Time Protocol, message queue, memcached và OpenStack Client
+###Cài đặt dịch vụ MySQL, message queue, Network Time Protocol, message queue, memcached và OpenStack Client
 ####Cài đặt OpenStack Client
 OpenStack Client là services cho phép người dùng tương tác với hệ thống OpenStack thông qua các câu lệnh. Hiện tại OpenStack Client hỗ trợ các dịch vụ : keystone, image, object storage và compute
 
@@ -247,7 +247,7 @@ Chỉnh sửa file  /etc/hosts để phân giải IP cho các node:
 	
 Khởi động lại máy tính.
 
-###2.2.2 Cài đặt dịch vụ Network Time Protocol và OpenStack Client
+###Cài đặt dịch vụ Network Time Protocol và OpenStack Client
 ####Cài đặt OpenStack Client
 Sau khi khởi động lại, ta kích hoạt repository Openstack:
 ```bash
@@ -803,7 +803,7 @@ GRANT ALL PRIVILEGES ON nova.* TO 'nova'@'%' \
 Khai báo biến môi trường
 
 ```bash
-.admin.openrc
+. admin-openrc
 ```
 + Tạo user, phân quyền và tạo endpoint cho dịch vụ nova
 Tạo user có tên là nova
