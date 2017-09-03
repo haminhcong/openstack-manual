@@ -2,9 +2,15 @@
 
 ## 1. Thiết lập hạ tầng và mô hình triển khai hệ thống
 
-Hệ thống  bkcloud OpenStack Ocata được triển khai trên 4 máy chủ bkcloud với sơ đồ hệ thống máy chủ vật lý và hệ thống mạng kết nối gồm 3 mạng: Mạng 10 Gbps 192.168.80.0/24 được sử dụng để làm mạng block storage - volume data network cho máy ảo, đồng thời sử dụng để triển khai các mạng private VLAN cho các project. Mạng 1 Gbps 192.168.60.0/24 được sử dụng để triển khai mạng Flat provider network cấp truy cập Internet cho các máy ảo. Mạng 100 Mbps 192.168.50.0/24 được sử dụng để làm mạng management network quản lý các máy tính vật lý cũng như được sử dụng để các service trên hệ thống OpenStack kết nối với nhau.
+### Hạ tầng mạng
 
-## Sơ đồ hạ tầng vật lý và sơ đồ triển khai các service của hệ thống OpenStack lên các máy chủ vật lý
+Hệ thống bkcloud OpenStack Ocata được triển khai trên 4 máy chủ bkcloud với hệ thống mạng kết nối gồm 3 mạng: 
+
+- Mạng 10 Gbps 192.168.80.0/24 được sử dụng để làm mạng block storage - volume data network cho máy ảo, đồng thời sử dụng để triển khai các mạng private VLAN cho các project. 
+- Mạng 1 Gbps 192.168.60.0/24 được sử dụng để triển khai mạng Flat provider network cấp truy cập Internet cho các máy ảo. 
+- Mạng 100 Mbps 192.168.50.0/24 được sử dụng để làm mạng management network quản lý các máy tính vật lý cũng như được sử dụng để các service trên hệ thống OpenStack kết nối với nhau.
+
+### Sơ đồ hạ tầng vật lý và sơ đồ triển khai các service của hệ thống OpenStack lên các máy chủ vật lý
 
 Mô hình hạ tầng vật lý và sơ đồ triển khai các service của hệ thống OpenStack lên các máy chủ vật lý như sau: [bkcloud_infra_diagram.png](./images/bkcloud_infra_diagram.png)
 
